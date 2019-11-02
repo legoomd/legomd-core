@@ -1,5 +1,5 @@
 
-import 'num_util.dart';
+import 'num.dart';
 
 enum MoneyUnit {
   NORMAL, // 6.00

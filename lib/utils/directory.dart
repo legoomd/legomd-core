@@ -5,7 +5,7 @@ import 'dart:io';
 import 'package:path_provider/path_provider.dart';
 import 'package:synchronized/synchronized.dart';
 
-import 'object_util.dart';
+import 'object.dart';
 
 /// getTemporaryDirectory
 /// 指向设备上临时目录的路径，该目录没有备份，适合存储下载文件的缓存。

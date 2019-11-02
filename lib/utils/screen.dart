@@ -38,6 +38,9 @@ class ScreenUtil {
     _singleton._init();
     return _singleton;
   }
+  static ScreenUtil i() {
+    return getInstance();
+  }
 
   _init() {
     MediaQueryData mediaQuery = MediaQueryData.fromWindow(ui.window);
@@ -63,7 +66,8 @@ class ScreenUtil {
   /// appBar height
   /// appBar 高
   double get appBarHeight => _appBarHeight;
-
+  /// 状态栏+app Bar高
+  double get asBarHeight => _appBarHeight+_statusBarHeight;
   /// screen density
   /// 屏幕 像素密度
   double get screenDensity => _screenDensity;
